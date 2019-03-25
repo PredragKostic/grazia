@@ -1,8 +1,15 @@
 body {
   width: 100%;
- 
+  font-family: $primary-font;
+ color: red;
+
+ @include tablet {
+  color: green;
+}
 }
 body, header, footer {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+
