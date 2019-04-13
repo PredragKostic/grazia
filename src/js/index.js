@@ -16,3 +16,15 @@ $('#alert').click(() => {
 });
 
 // Your jQuery code
+// $('[data-toggle=dropdown]').hover(
+//   function(){
+//     $(this).parent().addClass('show');
+//     $(this).attr('aria-expanded', true);
+//     console.log('in');
+//   },
+//   function(){
+//     console.log('out');
+//     $(this).parent().removeClass('show');
+//     $(this).attr('aria-expanded', false);
+//   }
+// );
