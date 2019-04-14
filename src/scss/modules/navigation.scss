@@ -3,7 +3,6 @@
     &.bg-secondary {
       width: 100%;
       a {
-        
         &.nav-link {
           color: white;
           &:hover {
@@ -19,28 +18,44 @@
     }
   }
   .dropdown {
-    &:hover> {
+    &:hover > {
       .dropdown-menu {
+        .dropdown-item {
+          color: $primary;
+          &:hover {
+            color: $secondary;
+            background-color: $primary;
+          }
+        }
         display: block;
-      }
+        margin-top: -3px;
+             }
     }
   }
 }
 
+#tit {
+  width: 100%;
+}
 .search {
   display: flex;
   align-items: center;
   justify-self: end;
-  margin-right: 0;
+  margin-right: 10px;
+  
 }
 .circle {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  text-align: center;
-  display: block;
+  width: 20px;
+  height: 20px;
+  display: flex;
   background-color: red;
   margin-bottom: 20px;
   color: white;
 }
-
+.row {
+  padding-left: 10px;
+  padding-right: 10px;
+}
