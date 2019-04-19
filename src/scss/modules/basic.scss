@@ -6,5 +6,14 @@ body, header, footer {
   width: 100%;
   font-family: $primary-font;
 }
-
-
+.caption {
+  background-color: $primary;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 90px;
+  width: 30px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 1);
+  background-size: 100%, 100%;
+  border: 1px solid black;
+}

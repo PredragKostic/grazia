@@ -34,9 +34,11 @@
   }
 }
 
-#tit {
-  width: 100%;
+.navbar-toggler-icon {
+  background-image: url("/src/public/images/nav-toggle.png");
+
 }
+
 .search {
   display: flex;
   align-items: center;
@@ -44,18 +46,5 @@
   margin-right: 10px;
   
 }
-.circle {
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  background-color: red;
-  margin-bottom: 20px;
-  color: white;
-}
-.row {
-  padding-left: 10px;
-  padding-right: 10px;
-}
+
+

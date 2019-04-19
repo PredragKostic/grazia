@@ -1,0 +1,15 @@
+#tit {
+  width: 100%;
+}
+
+.circle {
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-color: red;
+  margin-bottom: 20px;
+  color: white;
+}
