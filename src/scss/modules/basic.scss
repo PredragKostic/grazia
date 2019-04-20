@@ -1,15 +1,14 @@
-
-
-body, header, footer {
-  margin-left: 10px;
-  margin-right: 10px;
+body,
+header,
+footer {
   width: 100%;
   font-family: $primary-font;
 }
 .caption {
   background-color: $primary;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   height: 90px;
   width: 30px;
   outline: black;

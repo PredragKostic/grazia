@@ -16,6 +16,7 @@ const config = {
     output: {
         filename: 'js/[name].[hash].js',
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '',
     },
     module: {
         rules: [
@@ -27,9 +28,23 @@ const config = {
             {
                 test: /\.scss$/,
                 use: [
-                    IS_DEV ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    IS_DEV ? 'style-loader' : {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../'
+                        }
+                    },
                     'css-loader',
                     'sass-loader',
+                    {
+                        loader: 'resolve-url-loader',
+                        options: {
+                            debug: true,
+                            root: path.join(__dirname, './src/public/images'),
+                            includeRoot: true,
+                            absolute: false,
+                        },
+                    }
                 ],
             },
             {
@@ -41,6 +56,7 @@ const config = {
                             limit: 8192,
                             name: '[name].[ext]',
                             fallback: 'file-loader',
+                            publicPath: 'public/images',
                             outputPath: 'public/images',
                         },
                     },
@@ -80,6 +96,7 @@ const config = {
                     },
                 ],
             },
+
         ],
     },
     plugins: [

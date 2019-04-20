@@ -29,14 +29,24 @@
         }
         display: block;
         margin-top: -3px;
-             }
+      }
+    }
+  }
+  #navbarNavAltMarkup {
+    @include tablet {
+      display: none;
+    }
+    @include landscape {
+      display: none;
+    }
+    @include mobile {
+      display: none;
     }
   }
 }
 
 .navbar-toggler-icon {
-  background-image: url("/src/public/images/nav-toggle.png");
-
+  background-image: url("/public/images/nav-toggle.png");
 }
 
 .search {
@@ -44,7 +54,4 @@
   align-items: center;
   justify-self: end;
   margin-right: 10px;
-  
 }
-
-

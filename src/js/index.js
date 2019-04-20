@@ -28,3 +28,7 @@ $('#alert').click(() => {
 //     $(this).attr('aria-expanded', false);
 //   }
 // );
+
+$('.navbar-toggler-icon').click(function(){
+  $('#wrapper').toggleClass('toggled');
+});
