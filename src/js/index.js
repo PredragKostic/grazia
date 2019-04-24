@@ -32,3 +32,7 @@ $('#alert').click(() => {
 $('.navbar-toggler-icon').click(function(){
   $('#wrapper').toggleClass('toggled');
 });
+
+$('.close-toggle').click(function(){
+  $('#wrapper').toggleClass('toggled');
+});
