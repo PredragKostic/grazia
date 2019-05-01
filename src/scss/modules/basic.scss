@@ -4,9 +4,12 @@ footer {
   width: 100%;
   font-family: $primary-font;
 }
+
 .caption {
   background-color: $primary;
-}
+  width: 70px;  
+  color: black;
+  }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 90px;

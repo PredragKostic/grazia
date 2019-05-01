@@ -54,4 +54,28 @@
   align-items: center;
   justify-self: end;
   margin-right: 10px;
+  @include tablet {
+    display: inline-block;
+  }
+  @include landscape {
+    display: inline-block;
+  }
+  @include mobile {
+    display: inline-block;
+  }
+}
+
+.logo {
+  @include tablet {
+    width: 150px;
+    height: auto;
+  }
+  @include landscape {
+    width: 150px;
+    height: auto;
+  }
+  @include mobile {
+    width: 150px;
+    height: auto;
+  }
 }
