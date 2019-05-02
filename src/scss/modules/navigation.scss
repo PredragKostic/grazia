@@ -5,12 +5,18 @@
       a {
         &.nav-link {
           color: white;
+          @include tablet {
+            font-size: 0.7rem;
+          }
           &:hover {
             color: $primary;
           }
         }
       }
       .btn-secondary {
+        @include tablet {
+          font-size: 0.7rem;
+        }
         &:hover {
           color: $primary;
         }
@@ -18,7 +24,7 @@
     }
   }
   .dropdown {
-    &:hover > {
+       &:hover > {
       .dropdown-menu {
         .dropdown-item {
           color: $primary;
@@ -54,14 +60,13 @@
   align-items: center;
   justify-self: end;
   margin-right: 10px;
-  @include tablet {
-    display: inline-block;
-  }
+ 
   @include landscape {
-    display: inline-block;
+    margin-right: 25px;
   }
   @include mobile {
-    display: inline-block;
+    
+    margin-right: 30px;
   }
 }
 
@@ -75,7 +80,13 @@
     height: auto;
   }
   @include mobile {
-    width: 150px;
+    width: 90px;
     height: auto;
+  }
+}
+
+#na {
+  @include mobile {
+    padding-right: 20px;
   }
 }

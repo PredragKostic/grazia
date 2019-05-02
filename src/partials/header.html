@@ -1,30 +1,26 @@
 <header>
     <div class="container">
-        <div class="row d-flex justify-content-between align-items-center py-3">
-            <div class="col-md-4">
-                    <div>
-                            <i class="fab fa-facebook-f mr-3"></i>
-                            <i class="fab fa-twitter mr-3"></i>
-                            <i class="fab fa-instagram"></i>
-                        </div>
+        <div class="row justify-content-between align-items-center py-3">
+            <div class="col-4">
+                <i class="fab fa-facebook-f mr-3"></i>
+                <i class="fab fa-twitter mr-3"></i>
+                <i class="fab fa-instagram"></i>
             </div>
-            <div class="col-md-4">
-                    <div>
-                            <img src="./public/images/logo.jpg" alt="Grazia logo"  class="logo">
-                        </div>
+            <div class="col-4">
+                <img src="./public/images/logo.jpg" alt="Grazia logo" class="logo">
             </div>
-            <div class="col-md-4">
-                    <div class="d-inline-flex align-items-center">
-                            ${require('./modal.html')}
-        
-                            <div class="text-center">
-                                <a href="" class="btn btn-default btn-rounded" data-toggle="modal"
-                                    data-target="#modalLoginForm">Login</a>
-                            </div>
-                            <i class="fas fa-shopping-bag"></i>
-                            <div class="circle mr-2">88</div>
-                            <i class="fas fa-star mr-2"></i>
-                        </div>
+            <div class="col-4 d-inline-flex justify-content-end align-items-center" id="na">
+
+                ${require('./modal.html')}
+
+                <div class="text-center">
+                    <a href="" class="btn btn-default btn-rounded" data-toggle="modal"
+                        data-target="#modalLoginForm">Login</a>
+                </div>
+                <i class="fas fa-shopping-bag"></i>
+                <div class="circle mr-2">88</div>
+                <i class="fas fa-star mr-2"></i>
+
             </div>
 
         </div>
