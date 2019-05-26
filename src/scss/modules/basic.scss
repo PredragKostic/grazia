@@ -5,35 +5,8 @@ footer {
   font-family: $primary-font;
 }
 
-
-.grid {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 630px 300px;
-  height: auto;
-  margin-top: 20px;
-}
-#grid2 {
-  display: grid;
-  height: 880px;
-  grid-row-gap: 30px;
-  padding: 0;
-}
-
-#grid {
-  display: grid;
-  height: 880px;
-  padding: 0;
-  grid-gap: 30px;
-   
-}
-
-#main {
-  padding: 0;
-}
-
-#levo {
-  padding-right: 26px;
+.subtitle {
+  margin-top: 26px;
 }
 
 
