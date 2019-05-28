@@ -1,3 +1,7 @@
+#carousel {
+  font-family: $secondary-font;
+}
+
 .carousel-caption {
   width: 100%;
   right: 0;
@@ -6,9 +10,15 @@
     background-color: $primary;
     color: black;
     margin: auto;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
   }
   h5 {
     text-transform: uppercase;
+    font-size: 18px;
   }
 }
 
@@ -28,34 +38,55 @@
         display: block;
         position: relative;
         align-content: center;
-
-        .image-shadow {
-          display: flex;
-          width: 100%;
-          height: 33%;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          background: rgb(25, 25, 25);
-          background: linear-gradient(0deg, rgba(25, 25, 25, 1) 0%, rgba(210, 208, 201, 0.1) 100%);
-        }
+      }
+      .image-shadow {
+        display: flex;
+        width: 100%;
+        height: 33%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgb(25, 25, 25);
+        background: linear-gradient(0deg, rgba(25, 25, 25, 1) 0%, rgba(210, 208, 201, 0.1) 100%);
       }
     }
   }
 
-  .image-caption {
+  .text-holder {
     z-index: 2;
-    bottom: 0;
-    left: 10%;
+    width: 52.5%;
+    height: 19%;
+    bottom: 40.1%;
+    left: 42.2%;
     right: 10%;
     display: block;
     position: absolute;
     color: white;
-    text-align: center;
+    background: black;
+    opacity: 0.5;
+    text-align: left;
+    font-size: 14px;
+    overflow: hidden;
+    
+    .text-overflow {
+      overflow: hidden;
+      height: 46px;
+    }
   }
-  
+
+  .txt-box {
+    padding: 6%;
+  }
+
+  .txt {
+    color: white;
+  }
+
+  .txt-prim {
+    color: $primary;
+  }
   @include tablet {
-    width: 60%;
+    width: 100%;
     height: auto;
   }
 
@@ -63,4 +94,15 @@
     width: 100%;
     height: auto;
   }
+}
+
+.carousel-prev {
+  transform: rotate(180deg);
+  left: 0;
+  position: absolute;
+}
+
+.carousel-next {
+  position: absolute;
+  right: 0;
 }
