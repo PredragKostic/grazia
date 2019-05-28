@@ -67,7 +67,12 @@
     text-align: left;
     font-size: 14px;
     overflow: hidden;
-    
+    transition: opacity 0.2s;
+    &:hover {
+      opacity: 1;
+
+    }
+
     .text-overflow {
       overflow: hidden;
       height: 46px;
@@ -96,13 +101,62 @@
   }
 }
 
-.carousel-prev {
-  transform: rotate(180deg);
-  left: 0;
+.carousel-control-prev2 {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  cursor: none;
+
+  &:hover {
+    opacity: 1;
+    pointer-events: none;
+  }
+  .carousel-prev {
+    &:hover {
+      opacity: 0.8;
+    }
+    transform: rotate(180deg);
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+  }
 }
 
-.carousel-next {
+.carousel-control-next2 {
   position: absolute;
   right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  cursor: none;
+  &:hover {
+    opacity: 1;
+  }
+  .carousel-next {
+    &:hover {
+      opacity: 0.8;
+    }
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
 }
