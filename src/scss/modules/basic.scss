@@ -21,3 +21,26 @@ a {
     text-decoration: none;
   }
 }
+
+.grid {
+  #text-cover {
+    background-color: $primary;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 100px;
+    text-align: center;
+    padding: 18px;
+    
+    margin-top: -22px;
+    z-index: 2;
+    
+    h6 {
+      font-size: 14px;
+      font-family: $secondary-font;
+    }
+  
+  }
+}

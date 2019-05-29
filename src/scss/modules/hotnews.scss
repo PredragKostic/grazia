@@ -47,6 +47,12 @@
     position: absolute;
     color: white;
     text-align: center;
+    h6 {
+      text-transform: uppercase;
+      margin-top: 4%;
+      font-family: $secondary-font;
+      font-size: 14px;
+    }
   }
   .caption {
     background-color: $primary;
@@ -60,14 +66,11 @@
     }
     }
   
-  h6 {
-    text-transform: uppercase;
-    margin-top: 4%;
-    font-family: $secondary-font;
-    font-size: 14px;
-  }
+  
   
   .date {
     font-style: italic;
     font-size: 12px;
+    font-family: $secondary-font;
+  color: $grey;
   }
