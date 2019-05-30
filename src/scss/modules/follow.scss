@@ -1,10 +1,11 @@
 .follow {
-  width: 260px;
+  width: 300px;
   height: 220px;
   align-items: center;
   justify-content: center;
   text-align: center;
   text-justify: auto;
+  padding: 0 30px;
   p {
     text-transform: uppercase;
     font-family: $secondary-font;
