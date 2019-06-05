@@ -1,0 +1,22 @@
+.tags {
+    margin-top: 50px;
+
+    p {
+        a {
+            font-family: $secondary-font;
+            color: $secondary;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    span {
+        a {
+            font-family: $secondary-font;
+            color: $secondary;
+            font-size: 12px;
+            font-weight: bold;
+            
+        }
+    }
+}

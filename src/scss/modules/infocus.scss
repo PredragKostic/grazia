@@ -1,0 +1,41 @@
+.infocus {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 40px;
+
+  .holder {
+    height: 253px;
+
+   
+  }
+  .item {
+    .text-holder {
+      .infokussub {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        a {
+          font-family: $secondary-font;
+          font-size: 12px;
+          color: $secondary;
+          background-color: $primary;
+          text-transform: uppercase;
+          padding: 2px 6px;
+        }
+      }
+      p {
+        overflow: hidden;
+        max-height: 48px;
+        margin-bottom: 0;
+        line-height: 1em;
+        a {
+          font-family: $secondary-font;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
