@@ -44,13 +44,13 @@
 
             <div class="container p-0" id="main">
                 <div class="grid">
-                    <div class="container p-0">
+                    <main class="container p-0">
 
                         ${require('./partials/carousel.html')}
 
                         ${require('./partials/hotnews.html')}
-                    </div>
-                    <div class="container" id="grid2">
+                    </main>
+                    <aside class="container" id="grid2">
                         <div>
                             <a href="#">
                                 <img src="./public/images/baner-img-1.jpg" alt="Baner position 1" class="baner1">
@@ -61,12 +61,12 @@
                                 <img src="./public/images/baner-img-2.jpg" alt="Baner position 2" class="baner1">
                             </a>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
 
             <div class="container p-0">
-                <div class="grid">
+                <section class="grid">
                     ${require('./partials/stildana.html')}
 
                     <div class="container p-0">
@@ -82,10 +82,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
             <div class="container p-0">
-                <div class="grid">
+                <section class="grid">
                     <div class="container p-0">
                         ${require('./partials/graziashop.html')}
                     </div>
@@ -96,27 +96,27 @@
                         ${require('./partials/follow.html')}
                     </div>
 
-                </div>
+                </section>
             </div>
             <div class="container p-0">
-                <div class="grid">
+                <section class="grid">
                     <div class="container p-0">
                         ${require('./partials/news.html')}
                     </div>
 
-                    <div class="container p-0">
+                    <aside class="container p-0">
                         ${require('./partials/mostread.html')}
                         <a href="#"><img src="./public/images/facebookwidget.jpg" alt=""></a>
-                    </div>
+                    </aside>
 
-                </div>
+                </section>
             </div>
             <div class="container p-0">
                 ${require('./partials/infocus.html')}
             </div>
 
             <div class="container p-0">
-                <div class="grid">
+                <section class="grid">
                     <div class="container p-0">
 
 
@@ -125,10 +125,10 @@
                     <div class="container">
                         ${require('./partials/tags.html')}
                     </div>
-                </div>
+                </section>
             </div>
             <div class="container p-0">
-                <div class="grid">
+                <section class="grid">
                     <div class="container p-0">
 
 
@@ -137,7 +137,7 @@
                     <div class="container">
 
                     </div>
-                </div>
+                </section>
             </div>
             <div class="container p-0">
                 <div class="grid">
@@ -152,7 +152,7 @@
                 </div>
             </div>
             <div class="container p-0">
-                <div class="grid">
+                <section class="grid">
                     <div class="container p-0">
 
 
@@ -161,16 +161,18 @@
                     <div class="container">
 
                     </div>
-                </div>
+                </section>
             </div>
         </div>
 
+        <div>
 
+            ${require('./partials/footer.html')}
+
+        </div>
     </div>
 
-    ${require('./partials/footer.html')}
 
-    </div>
 </body>
 
 </html>
