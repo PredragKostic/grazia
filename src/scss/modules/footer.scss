@@ -1,0 +1,115 @@
+#footer {
+  background-color: $secondary;
+  margin-top: 40px;
+  border-top: 0.3px solid $info;
+
+  .footer {
+    display: grid;
+    width: 960px;
+    height: 345px;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 30px;
+
+    .item {
+
+      #logofooter {
+        padding-top: 50px;
+        padding-bottom: 30px;
+      }
+
+      p {
+        font-size: 12px;
+        font-family: $secondary-font;
+        color: $info;
+        padding-bottom: 10px;
+      }
+
+      #amfooter {
+        padding-top: 20px;
+      }
+
+      .newsletter {
+        margin-top: 45px;
+        #nlfooter {
+          font-size: 16px;
+          font-family: $secondary-font;
+          text-transform: uppercase;
+          color: $info;
+          font-weight: 600;
+        }
+
+        #new {
+          font-size: 12px;
+          font-family: $secondary-font;
+          color: $info;
+          padding-top: 20px;
+          padding-bottom: 0;
+        }
+
+        #formbox {
+          display: flex;
+          align-content: center;
+          width: 100px;
+
+          #box {
+            background-color: $secondary;
+            border-top: 0.3px solid $info;
+            border-left: 0.3px solid $info;
+            border-bottom: 0.3px solid $info;
+            border-right: none;
+            height: 40px;
+            padding: 0;
+          }
+
+          #box2 {
+            padding: 0;
+            right: 0;
+          }
+        }
+      }
+      .tag {
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        p {
+          padding-bottom: 0;
+          a {
+            font-size: 16px;
+            font-family: $secondary-font;
+            text-transform: uppercase;
+            color: $info;
+            font-weight: 600;
+          }
+        }
+        span {
+          a {
+            font-size: 10px;
+            font-family: $secondary-font;
+            color: $info;
+            overflow: hidden;
+          }
+        }
+      }
+      .ifeed {
+        padding-top: 50px;
+        padding-left: 35px;
+        #infeed {
+          display: block;
+          margin-bottom: 20px;
+          a {
+            font-size: 16px;
+            font-family: $secondary-font;
+            text-transform: uppercase;
+            color: $info;
+            font-weight: 600;
+          }
+        }
+
+        #instfeed {
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
