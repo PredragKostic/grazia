@@ -39,8 +39,32 @@ $desktop-width: 980px;
   }
 }
 
+@mixin landscape-and-up {
+  @media (min-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin landscape-and-down {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
 @mixin tablet {
     @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+      @content;
+    }
+  }
+
+  @mixin tablet-and-up {
+    @media (min-width: #{$tablet-width}) {
+      @content;
+    }
+  }
+
+  @mixin tablet-and-down {
+    @media (max-width: #{$desktop-width - 1px}) {
       @content;
     }
   }
@@ -50,3 +74,4 @@ $desktop-width: 980px;
       @content;
     }
   }
+

@@ -1,5 +1,8 @@
 #carousel {
   font-family: $secondary-font;
+  max-width: 630px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .carousel-caption {
@@ -53,29 +56,35 @@
   }
 
   .text-holder {
+    align-items: center;
     z-index: 2;
     width: 52.5%;
-    height: 19.5%;
-    bottom: 40.1%;
-    left: 42.2%;
-    right: 10%;
-    display: block;
+
+    bottom: 0;
+    top: 0;
+    
+    right: 34px;
+    display: flex;
     position: absolute;
+    justify-content: center;
     color: white;
-    background: black;
-    opacity: 0.5;
+
     text-align: left;
     font-size: 14px;
     overflow: hidden;
     transition: opacity 0.2s;
     &:hover {
       opacity: 1;
-
     }
+    .text-wraper {
+      height: 80px;
+      background: black;
+      opacity: 0.5;
 
-    .text-overflow {
-      overflow: hidden;
-      height: 46px;
+      .text-overflow {
+        overflow: hidden;
+        height: 46px;
+      }
     }
   }
 
