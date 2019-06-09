@@ -4,10 +4,35 @@
   grid-gap: 30px;
   margin-top: 40px;
 
+  @include tablet-and-down {
+    grid-template-columns: 1fr;
+    .holder {
+      display: none;
+    }
+    article {
+      display: grid;
+      grid-template-columns: 35% 1fr;
+      grid-gap: 20px;
+      background-color: $info;
+      .image-holder {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      
+    }
+  }
+
+  @include mobile {
+    article {
+      grid-template-columns: 50% 1fr;
+      
+    }
+  }
+
   .holder {
     height: 253px;
-
-   
   }
   .item {
     .text-holder {

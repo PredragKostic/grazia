@@ -32,3 +32,10 @@
     }
   }
 }
+
+#stil {
+    @include tablet-and-down {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
