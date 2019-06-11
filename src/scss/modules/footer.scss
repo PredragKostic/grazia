@@ -2,13 +2,22 @@
   background-color: $secondary;
   margin-top: 40px;
   border-bottom: 0.3px solid $info;
+  @include tablet-and-down {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: 105%;
+    text-align: center;
+  }
 
   .footer {
     display: grid;
-    width: 960px;
-    height: 345px;
-    grid-template-columns: 300px 300px 300px;
+    
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
+    @include tablet-and-down {
+      grid-template-columns: 1fr;
+    }
 
     .item {
       #logofooter {
@@ -21,7 +30,6 @@
         font-family: $secondary-font;
         color: $info;
         padding-bottom: 10px;
-        
       }
       a {
         color: $info;
@@ -126,6 +134,9 @@
 #navi {
   background-color: $secondary;
   height: 80px;
+  @include tablet-and-down {
+    display: none;
+  }
   .navfoot {
     display: flex;
     justify-content: space-between;
@@ -149,7 +160,13 @@
 
 #copiright {
   background-color: $primary;
-  height: 40px;
+  min-height: 40px;
+  @include tablet-and-down {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: 105%;
+   
+  }
 
   #cop {
     display: flex;
@@ -159,5 +176,11 @@
     font-family: $secondary-font;
     color: $secondary;
     line-height: 40px;
+    
+    @include mobile {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
   }
 }

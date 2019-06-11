@@ -12,6 +12,9 @@
   font-size: 15px;
   margin-bottom: 20px;
   margin-top: 50px;
+  @include tablet-and-down {
+    margin-top: 0;
+  }
 
   .item {
     grid-column: 1 / 3;
